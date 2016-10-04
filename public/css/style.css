@@ -1,0 +1,23 @@
+.carousel-control .fa-arrow-right, .carousel-control .fa-arrow-left{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.margin-auto{
+    margin: 0 auto;
+}
