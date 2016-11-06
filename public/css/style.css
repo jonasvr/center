@@ -21,3 +21,55 @@
 .margin-auto{
     margin: 0 auto;
 }
+
+.navbar-default{
+    background: #614B7C;
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+    color: #fff;
+}
+
+.bg-purple{
+    background: #614B7C;
+}
+
+.white{
+    color: #fff;
+}
+
+body{
+    font-family: 'Source Sans Pro', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.width-100{
+    width:100%;
+}
+.width-48{
+    width:49%;
+}
+
+.margin-right-75{
+    margin-right: .75%;
+}
+.padding-20{
+    padding:20px;
+}
+
+.input-style{
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    background-color: #EEEEEE;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.submit-button{
+    border: 2px solid #604d7a;
+    border-radius: 4px;
+}
+
+.font-size-16{
+    font-size: 16px;
+}

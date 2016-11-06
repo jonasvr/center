@@ -49,9 +49,7 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right text-capitalize">
-                    <li><a href="{{ url('/login') }}">diensten</a></li>
-                    <li><a href="{{ url('/login') }}">tarieven</a></li>
-                    <li><a href="{{ url('/login') }}">grondplan</a></li>
+                    <li><a href="{{ url('/kantoren') }}">kantoren</a></li>
                     <li><a href="{{ url('/contact') }}">contact</a></li>
 
                 </ul>

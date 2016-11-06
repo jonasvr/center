@@ -3,7 +3,7 @@
         <h2>Tarieven</h2>
 
         <ul class="list-unstyled">
-            <li> 250/maand per werkplek</li>
+            <li> € 250,00/maand per werkplek</li>
             <li> vergaderruimten
                 <ul>
                     <li> klein - 20m2</li>
