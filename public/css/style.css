@@ -17,6 +17,9 @@
 .margin-bottom-20{
     margin-bottom: 20px;
 }
+.margin-bottom-10, .list-unstyled li{
+    margin-bottom: 10px;
+}
 
 .margin-auto{
     margin: 0 auto;
@@ -25,7 +28,7 @@
 .navbar-default{
     background: #614B7C;
 }
-.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text, .nav{
     color: #fff;
 }
 
@@ -73,3 +76,31 @@ body{
 .font-size-16{
     font-size: 16px;
 }
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: center;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    top: 15px;
+}
+
+
+.maxheight{
+    max-height: 80vh;
+}
+
+.padding-14
+{
+    padding-top:14px;
+    padding-bottom:14px;
+    padding-left:15px;
+}
+
+.hover-li:hover, .navbar-default .navbar-brand:hover,.navbar-default .navbar-nav li a:hover {
+    color:dodgerblue;
+}
+

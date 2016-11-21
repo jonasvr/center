@@ -43,13 +43,17 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
-                    &nbsp;
+                <ul class="nav navbar-nav navbar-text">
+                    <li class="font-size-16"> Tel:03 489 02 06</li>
                 </ul>
+
+
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right text-capitalize">
-                    <li><a href="{{ url('/kantoren') }}">kantoren</a></li>
+                    <li class="padding-14 hover-li" id="4-persons">4 persoons</li>
+                    <li class="padding-14 hover-li" id="6-persons">6 persoons</a></li>
+                    <li class="padding-14 hover-li" id="8-persons">8 persoons</a></li>
                     <li><a href="{{ url('/contact') }}">contact</a></li>
 
                 </ul>
@@ -61,5 +65,6 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+    <script src="/js/test.js"></script>
 </body>
 </html>

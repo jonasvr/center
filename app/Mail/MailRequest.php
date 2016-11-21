@@ -11,14 +11,19 @@ class MailRequest extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $sender;
+    public $name;
+    public $content;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($sender,$name,$content)
     {
-        //
+        $this->sender = $sender;
+        $this->name = $name;
+        $this->content = $content;
     }
 
     /**
@@ -28,6 +33,8 @@ class MailRequest extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.mail');
+        return $this->view('mails.mail')
+            ->from($this->sender, $this->name)
+            ->subject("Bussines Center - contact");
     }
 }

@@ -8,21 +8,33 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner maxheight" role="listbox">
         <div class="item active">
-            <img src="http://placehold.it/900x500" alt="Chania">
+            <img  class="img-responsive" src="{{asset('img/img1.jpg')}}" alt="Chania">
+            <div class="carousel-caption">
+                <h3>RVR Business Center</h3>
+            </div>
         </div>
 
         <div class="item">
-            <img src="http://placehold.it/900x500" alt="Chania">
+            <img  class="img-responsive" src="{{asset('img/img2.jpg')}}" alt="Chania">
+            <div class="carousel-caption">
+                <h3>RVR Business Center</h3>
+            </div>
         </div>
 
         <div class="item">
-            <img src="http://placehold.it/900x500" alt="Flower">
+            <img  class="img-responsive" src="{{asset('img/img3.jpg')}}" alt="Chania">
+            <div class="carousel-caption">
+                <h3>RVR Business Center</h3>
+            </div>
         </div>
 
         <div class="item">
-            <img src="http://placehold.it/900x500" alt="Flower">
+            <img  class="img-responsive" src="{{asset('img/img4.jpg')}}" alt="Chania">
+            <div class="carousel-caption">
+                <h3>RVR Business Center</h3>
+            </div>
         </div>
     </div>
 
@@ -35,4 +47,16 @@
         <i class="fa fa-arrow-right" aria-hidden="true"></i>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+
+
+<div id="4-persons-image" class="">
+    <img class="maxheight width-100" src="{{asset('img/img1.jpg')}}" alt="">
+</div>
+<div id="6-persons-image" class="">
+    <img class="maxheight width-100" src="{{asset('img/img2.jpg')}}" alt="">
+</div>
+<div id="8-persons-image" class="">
+    <img class="maxheight width-100" src="{{asset('img/img3.jpg')}}" alt="">
 </div>

@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactFormRequest;
+use App\Mail\MailRequest;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
@@ -26,8 +29,10 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function post()
+    public function mail(ContactFormRequest $request)
     {
-
+        $data = $request->all();
+//            dd($data);
+        Mail::to('jonasvanreeth@gmail.com')->send(new MailRequest($data["mail"],$data["name"],$data["content"]));
     }
 }

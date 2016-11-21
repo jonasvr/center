@@ -21,7 +21,7 @@ Route::get('/contact', function () {
 Route::get('/kantoren', function () {
     return view('kantoren');
 });
-Route::post('contact/post', 'HomeController@post');
+Route::post('contact/post', 'HomeController@mail');
 
 Auth::routes();
 

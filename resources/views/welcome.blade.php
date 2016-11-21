@@ -6,20 +6,34 @@
             @include('welcome.carousel')
         </div>
         <div class="row margin-top-20 bg-purple white">
-            <div class="col-md-offset-3 col-md-4">
-                @include('welcome.diensten')
-            </div>
-            <div class="col-md-offset-0 col-md-4 ">
-                @include('welcome.tarieven')
+            <div class="col-md-offset-1 margin-bottom-20">
+                <div class="row">
+                    <div class="row">
+                        <h2>services en faciliteiten</h2>
+                    </div>
+                    <div class="row">
+                        @include('welcome.services')
+                    </div>
+                    <div class="row">
+                        @include('welcome.parking')
+                    </div>
+                    <div class="row">
+                        @include('welcome.mobiliteit')
+                    </div>
+                    <div class="row">
+                        @include('welcome.building')
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row margin-top-20 margin-bottom-20">
-            <div class="col-md-offset-2 col-md-10">
-                <h2> Grondplan</h2>
+            <div class="col-md-offset-1 col-md-10">
+                <div class="row"><h2> Grondplan</h2></div>
+
             </div>
-            <div class="text-center margin-top-20">
-                <img src="http://placehold.it/900x500" alt="">
+            <div class="text-center margin-top-20 maxheight">
+                <img class="img-responsive" src="{{asset('img/layout.jpg')}}" alt="">
             </div>
         </div>
     </div>

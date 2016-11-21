@@ -2,6 +2,15 @@
 
 @section('content')
     <div class="container">
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="row margin-bottom-20">
             <div class="text-center">
                 <h2>Contacteer ons</h2>
@@ -17,12 +26,13 @@
                 <strong>Email :</strong>  info@IRVR.be <br>
             </div>
             <div class="col-md-offset-1 col-md-6">
-                {!! Form::open(['url' => 'contact/post']) !!}
-                <input type="text" placeholder="Naam" class="width-48 margin-auto input-style margin-right-75">
-                <input type="text" placeholder="E-mailadres" class="width-48 margin-auto input-style">
-                <textarea name="" id="" cols="30" rows="5"  placeholder="Bericht" class="width-100 input-style"></textarea>
+                <form class="form-horizontal" role="form" method="POST" action="{{ url('contact/post') }}">
+                {{ csrf_field() }}
+                <input name="name" type="text" placeholder="Naam"  value="{{ old('name') }}" class="width-48 margin-auto input-style margin-right-75">
+                <input name="mail" type="text" placeholder="E-mailadres" value="{{ old('mail') }}" class="width-48 margin-auto input-style">
+                <textarea name="content" id="" cols="30" rows="5" value="{{ old('contents') }}" placeholder="Bericht" class="width-100 input-style"></textarea>
                 <input type="submit" value="Indienen" class="input-style submit-button">
-                {!! Form::close() !!}
+                </form>
             </div>
 
         </div>
@@ -39,13 +49,13 @@
         function myMap() {
             var mapCanvas = document.getElementById("map");
             var mapOptions = {
-                center: new google.maps.LatLng(51.1273081,4.4225888),
+                center: new google.maps.LatLng(51.1277663,4.4258928),
                 zoom: 17
             }
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
 
-            var myLatLng = {lat: 51.1273081, lng: 4.4225888};
+            var myLatLng = {lat: 51.1277663, lng: 4.4258928};
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
