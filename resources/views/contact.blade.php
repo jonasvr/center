@@ -18,7 +18,7 @@
         </div>
         <div class="row margin-bottom-20">
             <div class="col-md-offset-1 col-md-3 font-size-16">
-               <strong>Studiebureau Van Reeth</strong>  <br>
+               <strong>RVR - Business center</strong>  <br>
                 Satenrozen 1 A <br>
                 2550 Kontich <br>
                 Belgium <br> <br>

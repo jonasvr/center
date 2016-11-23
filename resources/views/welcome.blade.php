@@ -5,7 +5,7 @@
         <div class="row">
             @include('welcome.carousel')
         </div>
-        <div class="row margin-top-20 bg-purple white">
+        <div class="row margin-top-20 bg-purple white maxheight-90">
             <div class="col-md-offset-1 margin-bottom-20">
                 <div class="row">
                     <div id="service" class="row">

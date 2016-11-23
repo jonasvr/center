@@ -97,6 +97,10 @@ body{
     max-height: 70vh;
 }
 
+.maxheight-90{
+    max-height: 90vh;
+}
+
 .padding-14
 {
     padding-top:14px;
