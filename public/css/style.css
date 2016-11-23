@@ -93,6 +93,10 @@ body{
     max-height: 80vh;
 }
 
+.maxheight-70{
+    max-height: 70vh;
+}
+
 .padding-14
 {
     padding-top:14px;
@@ -102,5 +106,9 @@ body{
 
 .hover-li:hover, .navbar-default .navbar-brand:hover,.navbar-default .navbar-nav li a:hover {
     color:dodgerblue;
+}
+
+.gray{
+    color:#555;
 }
 

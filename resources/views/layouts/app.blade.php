@@ -51,11 +51,17 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right text-capitalize">
-                    <li class="padding-14 hover-li" id="4-persons">4 persoons</li>
-                    <li class="padding-14 hover-li" id="6-persons">6 persoons</a></li>
-                    <li class="padding-14 hover-li" id="8-persons">8 persoons</a></li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kantoren <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="padding-14 hover-li gray" id="4-persons">4 persoons</li>
+                            <li class="padding-14 hover-li gray" id="6-persons">6 persoons</li>
+                            <li class="padding-14 hover-li gray" id="8-persons">8 persoons</li>
+                        </ul>
+                    </li>
+                    <li><a href="#service">service</a></li>
+                    <li><a href="#grondplan">grondplan</a></li>
                     <li><a href="{{ url('/contact') }}">contact</a></li>
-
                 </ul>
             </div>
         </div>

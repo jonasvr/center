@@ -8,7 +8,7 @@
         <div class="row margin-top-20 bg-purple white">
             <div class="col-md-offset-1 margin-bottom-20">
                 <div class="row">
-                    <div class="row">
+                    <div id="service" class="row">
                         <h2>services en faciliteiten</h2>
                     </div>
                     <div class="row">
@@ -32,7 +32,7 @@
                 <div class="row"><h2> Grondplan</h2></div>
 
             </div>
-            <div class="text-center margin-top-20 maxheight">
+            <div id="grondplan"  class="text-center margin-top-20 maxheight-70">
                 <img class="img-responsive" src="{{asset('img/layout.jpg')}}" alt="">
             </div>
         </div>
